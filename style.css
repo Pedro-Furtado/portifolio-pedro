@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-main:linear-gradient(120deg, rgb(29, 109, 72), black);
+    --bg-menu:white;
+    --bg-menu-hover:rgb(61, 199, 134);
+    --bg-section:rgb(221, 220, 220);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+}
+menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--bg-menu);
+    width: 120px;
+    height: 100%;
+    padding: 10px;
+    z-index: 10;
+}
+menu::after{
+    content: "";
+    position: absolute;
+    border-left: solid 1px black;
+    height: 80%;
+    z-index: -2;
+}
+menu div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+menu div p{
+    font-size: 12px;
+}
+menu div span{
+    font-size: 25px;
+}
+.indicador_home{
+    display: none;
+    width:10px; 
+    height: 10px;
+    border-radius: 10px;
+    background: var(--bg-menu-hover);
+    z-index: 1;
+    transition: 0.3s;
+}
+.indicador_sobre{
+    display: none;
+    width:10px; 
+    height: 10px;
+    border-radius: 10px;
+    background: var(--bg-menu-hover);
+    z-index: 1;
+    transition: 0.3s;
+}
+.indicador_abilidades{
+    display: none;
+    width:10px; 
+    height: 10px;
+    border-radius: 10px;
+    background: var(--bg-menu-hover);
+    z-index: 1;
+    transition: 0.3s;
+}
+.indicador_portifolio{
+    display: none;
+    width:10px; 
+    height: 10px;
+    border-radius: 10px;
+    background: var(--bg-menu-hover);
+    z-index: 1;
+    transition: 0.3s;
+}.indicador_chat{
+    display: none;
+    width:10px; 
+    height: 10px;
+    border-radius: 10px;
+    background: var(--bg-menu-hover);
+    z-index: 1;
+    transition: 0.5s;
+}
+.show_indicate{
+    display: flex;
+    transition: 0.5s;
+    
+}
+main{
+    margin-left: 120px;
+    width: calc(100% - 120px);
+    
+    
+}
+main section{
+    width: 100%;
+    height: 100%;
+    padding: 70px 0px;
+    
+    
+}
+/*================= home =================*/
+main .s_home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--bg-main);
+    
+    
+}
+main .s_home .meu_nome{
+    font-size: 50px;
+    color: white;
+    margin-left: 200px;
+}
+main .s_home .oq_faco{
+    font-size: 35px;
+    color: var(--bg-menu-hover);
+    margin-left: 400px;
+}
+/*================= sobre ===============*/
+main .s_sobre{
+    display: flex;
+    justify-content: space-around;
+}
+main .s_sobre .sobre_img{
+    width: 300px;
+    height: 400px;
+    
+}
+main .s_sobre .sobre_img img{
+    width: 300px;
+    box-shadow: 2px 2px 8px .01px black;
+}
+main .s_sobre .sobre_text{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: break-word;
+    
+}
+/*================= abilidades =================*/
+main .s_abilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background:var(--bg-section) ;
+}
+main .s_abilidades .linha{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+main .s_abilidades .options_abilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px .01px black;
+    gap: 10px;
+}
+main .s_abilidades .options_abilidades:hover{
+    scale: 1.02;
+}
+main .s_abilidades .options_abilidades img{
+    width: 70px;
+}
+main .s_abilidades .options_abilidades h2{
+    font-size: 20px;
+}
+main .s_abilidades .options_abilidades p{
+    font-size: 12px;
+    text-align: center;
+}
+/*============= portifólio ===============*/
+main .s_portifolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+main .s_portifolio .linha{
+    display: flex;
+    gap: 15px;
+}
+main .s_portifolio .projeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px .01px black;
+    background: var(--bg-main);
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+}
+main .s_portifolio .projeto:hover{
+    letter-spacing: 0px;
+    animation: anim_em_breve 1.5s infinite alternate;
+}
+main .s_portifolio .projeto h2{
+    font-size: 35px;
+    rotate: -28deg;
+}
+main .s_portifolio .projeto h2::after{
+    content: '';
+    position: absolute;
+    left: -150px;
+    width: 500px;
+    height: 5px;
+    background-color: white;
+}
+main .s_portifolio .projeto h2::before{
+    content: '';
+    position: absolute;
+    left: -150px;
+    top: 50px;
+    width: 500px;
+    height: 5px;
+    background-color: white;
+}
+/*============= chat ===============*/
+main .s_chat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background:var(--bg-section)
+}
+main .s_chat .rede_social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .s_chat .rede_social img{
+    width: 80px;
+}
+/*================ mobile screen ===============*/
+@media screen and (max-width:1130px){
+    menu{
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        flex-direction:row;
+        width: 100%;
+        height: 120px;
+        z-index: 10;
+    }
+    menu::after{
+        display: none;
+        content: "";
+        position: absolute;
+        border-left: none;
+        border-bottom: solid 1px black;
+        bottom: 50%;
+        width: 80%;
+        z-index: -2;
+    }
+    menu .show_indicate{
+        display: flex;
+        width: 90px;
+        height: 90px;
+        border-radius: 90px;
+        position: absolute;
+        background: transparent;
+        border: solid 3px var(--bg-menu-hover);
+        box-shadow: 2px 2px 8px .01px black;
+    }
+    menu div{
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        gap: 2px;
+    }
+    
+    menu div:hover{
+        
+        color: var(--bg-menu-hover);
+
+    }
+    
+    menu div p{
+        font-size: 10px;
+        z-index: 2;
+    }
+    menu div span{
+        z-index: 2;
+    }
+    main{
+        margin-left: 0px;
+        width: 100%;
+    }
+    main .s_home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .s_home .meu_nome{
+        font-size: 35px;
+        margin: 0;
+        margin-top: -100px;
+    }
+    main .s_home .oq_faco{
+        font-size: 20px;
+        margin: 0;
+    }
+    main .s_sobre{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+    main .s_sobre .sobre_text{
+        width: 300px;
+    }
+    main .s_abilidades{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+    main .s_abilidades .linha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+        
+    }
+    main .s_portifolio{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+    main .s_portifolio .linha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+}
+
+@keyframes anim_em_breve {
+    from{
+        letter-spacing: 0;
+    }
+    to{
+        letter-spacing: 5px;
+    }
+}
