@@ -111,3 +111,8 @@ selecionar(
     button_home,
     button_sobre
 )
+
+const btn_projeto_01 = document.getElementById("p_1")
+btn_projeto_01.addEventListener("click", () => {
+    window.open("projeto-busca-8a5ip299y-pedro-furtado.vercel.app")
+})

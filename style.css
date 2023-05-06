@@ -223,6 +223,13 @@ main .s_portifolio .linha{
     display: flex;
     gap: 20px;
 }
+main .s_portifolio .linha #p_1 img{
+    width: 100%;
+    height: 100%;
+}
+main .s_portifolio .linha #p_1 img:hover{
+    scale: 1.05;
+}
 main .s_portifolio .projeto{
     display: flex;
     align-items: center;
