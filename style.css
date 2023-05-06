@@ -14,7 +14,9 @@
 body{
     width: 100%;
     height: 100vh;
-    
+    background-image:url("imgs/minha_capa.png") ;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
 }
 menu{
@@ -121,7 +123,7 @@ main .s_home{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: var(--bg-main);
+    
     
     
 }
@@ -139,6 +141,8 @@ main .s_home .oq_faco{
 main .s_sobre{
     display: flex;
     justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.137);
+    color: white;
 }
 main .s_sobre .sobre_img{
     width: 300px;
@@ -146,11 +150,12 @@ main .s_sobre .sobre_img{
     
 }
 main .s_sobre .sobre_img img{
-    width: 300px;
+    width: 400px;
     box-shadow: 2px 2px 8px .01px black;
 }
 main .s_sobre .sobre_text{
     width: 600px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,7 +169,7 @@ main .s_abilidades{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background:var(--bg-section) ;
+    
 }
 main .s_abilidades .linha{
     display: flex;
@@ -183,6 +188,10 @@ main .s_abilidades .options_abilidades{
     padding: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 8px .01px black;
+    background: linear-gradient(120deg,  #bb891fef , rgb(221, 176, 78));
+
+
+    background: linear-gradient(120deg,  #4d644aef , rgb(0, 0, 0));
     gap: 10px;
 }
 main .s_abilidades .options_abilidades:hover{
@@ -192,23 +201,27 @@ main .s_abilidades .options_abilidades img{
     width: 70px;
 }
 main .s_abilidades .options_abilidades h2{
+    color: white;
     font-size: 20px;
 }
 main .s_abilidades .options_abilidades p{
     font-size: 12px;
     text-align: center;
+    color: white;
 }
 /*============= portifólio ===============*/
 main .s_portifolio{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background-color: rgba(0, 0, 0, 0.137);
 }
 main .s_portifolio .linha{
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 main .s_portifolio .projeto{
     display: flex;
@@ -254,7 +267,7 @@ main .s_chat{
     align-items: center;
     justify-content: center;
     gap: 25px;
-    background:var(--bg-section)
+   
 }
 main .s_chat .rede_social{
     display: flex;
@@ -266,6 +279,9 @@ main .s_chat .rede_social img{
 }
 /*================ mobile screen ===============*/
 @media screen and (max-width:1130px){
+    body{
+        background-image: url("imgs/fundo_celular.png");
+    }
     menu{
         display: flex;
         justify-content: space-around;
@@ -328,7 +344,7 @@ main .s_chat .rede_social img{
         justify-content: center;
     }
     main .s_home .meu_nome{
-        font-size: 35px;
+        font-size: 30px;
         margin: 0;
         margin-top: -100px;
     }
@@ -342,8 +358,12 @@ main .s_chat .rede_social img{
         gap: 20px;
         height: auto;
     }
+    main .s_sobre .sobre_img img{
+        width: 300px;
+    }
     main .s_sobre .sobre_text{
         width: 300px;
+        font-size: 15px;
     }
     main .s_abilidades{
         display: flex;
