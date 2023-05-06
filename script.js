@@ -114,5 +114,5 @@ selecionar(
 
 const btn_projeto_01 = document.getElementById("p_1")
 btn_projeto_01.addEventListener("click", () => {
-    window.open("projeto-busca-8a5ip299y-pedro-furtado.vercel.app")
+    window.open("https://projeto-busca-8a5ip299y-pedro-furtado.vercel.app")
 })
