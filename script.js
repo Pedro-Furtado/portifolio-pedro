@@ -119,5 +119,5 @@ btn_projeto_01.addEventListener("click", () => {
 
 const btn_projeto_02 = document.getElementById("p_2")
 btn_projeto_02.addEventListener("click", () => {
-    window.open("http://relogio-8v4m6gx07-pedro-furtado.vercel.app")
+    window.open("http://relogio-q49i7tes5-pedro-furtado.vercel.app")
 })
