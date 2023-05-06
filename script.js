@@ -116,3 +116,8 @@ const btn_projeto_01 = document.getElementById("p_1")
 btn_projeto_01.addEventListener("click", () => {
     window.open("https://projeto-busca-8a5ip299y-pedro-furtado.vercel.app")
 })
+
+const btn_projeto_02 = document.getElementById("p_2")
+btn_projeto_02.addEventListener("click", () => {
+    window.open("http://relogio-8v4m6gx07-pedro-furtado.vercel.app")
+})
