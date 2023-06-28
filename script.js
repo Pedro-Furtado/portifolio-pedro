@@ -121,3 +121,8 @@ const btn_projeto_02 = document.getElementById("p_2")
 btn_projeto_02.addEventListener("click", () => {
     window.open("http://relogio-q49i7tes5-pedro-furtado.vercel.app")
 })
+
+const btn_projeto_03 = document.getElementById("p_3")
+btn_projeto_03.addEventListener("click", () => {
+    window.open("https://hover-effects-one.vercel.app/")
+})

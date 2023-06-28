@@ -237,7 +237,7 @@ main .s_portifolio .linha #p_2 img{
 main .s_portifolio .linha #p_2 img:hover{
     scale: 1.05;
 }
-main .s_portifolio .projeto{
+main .s_portifolio .projeto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,6 +249,11 @@ main .s_portifolio .projeto{
     color: white;
     overflow: hidden;
     cursor: pointer;
+}
+main .s_portifolio .projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 main .s_portifolio .projeto:hover{
     letter-spacing: 0px;
